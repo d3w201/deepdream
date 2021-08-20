@@ -45,7 +45,7 @@ def run_deep_dream_simple(target_img, steps=100, step_size=0.01):
 
         loss, target_img = deepdream(target_img, run_steps, tf.constant(step_size))
 
-        show(de_process(target_img))
+        # show(de_process(target_img))
         print("Step {}, loss {}".format(step, loss))
 
     result = de_process(target_img)
